@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Visual Academy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+
+    <script src="financeiro.js"></script>
+    <link rel="stylesheet" href="../default.css" type="text/css">
+    <link rel="stylesheet" href="financeiro.css" type="text/css">
+</head>
+
+<body>
+
+    <h1>Financeiro</h1>
+    <div id="main">
+
+
+        <h4>Escolha o método de pagamento</h4>
+        <div id="form-pix">
+            <input type="radio" name="financeiro" id="pix" value="pix">
+            <label for="pix">PIX</label>
+        </div>
+        <div id="form-boleto">
+            <input type="radio" name="financeiro" id="boleto" value="boleto">
+            <label for="boleto">BOLETO</label>
+        </div>
+        <div id="form-cartaodecredito">
+            <input type="radio" name="financeiro" id="cartaodecredito" value="cartaodecredito">
+            <label for="cartaodecredito">CARTÃO DE CRÉDITO</label>
+        </div>
+
+        <button id="selecionar" onclick="selecao()">Selecionar</button>
+
+        <div id="div-pix">
+            <label for="codigoPix">Copie o código do Pix abaixo: </label>
+            <input type="text" name="codigo" id="codigoPix">
+            <label for="qrCode">Escaneie o Qr Code abaixo: </label>
+            <img src="qrcode.png" alt="qrcode" srcset="" id="qrCode">
+
+        </div>
+        <div id="div-boleto">
+            <input type="text" name="" id="" placeholder="Digite seu nome">
+            <input type="text" name="" id="" placeholder="Digite seu CPF">
+            <button>GERAR BOLETO</button>
+
+        </div>
+        <h4 id="cartao-title">Digite seus dados de cartão de crédito</h4>
+
+        <div id="div-cartaoDeCredito">
+            <input type="text" name="" id="" placeholder="Digite seu nome">
+            <input type="text" name="" id="" placeholder="Digite seu CPF">
+            <input type="text" name="" id="" placeholder="Digite o numero do cartão">
+            <input type="text" name="" id="" placeholder="Digite o CVC">
+            <input type="text" name="" id="" placeholder="Digite a data de vencimento do cartão">
+            <button>CONTINUAR</button>
+
+
+        </div>
+
+
+
+    </div>
+    <a href="../menu.html">Menu</a>
+
+
+</body>
