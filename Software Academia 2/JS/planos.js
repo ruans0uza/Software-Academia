@@ -71,9 +71,16 @@ table.querySelectorAll("th,td").forEach(function (_el, index) {
 })
 
 
-function Selecionar() {
-    var select = document.getElementById("select");
-    var value = select.options[select.selectedIndex].value;
-    alert(value);
+function verificaSelecionado() {
+
+    if (document.getElementById('silver').checked || document.getElementById('gold').checked || document.getElementById('premium').checked) {
+        window.location.href = "../HTML/financeiro.html";
+    }
+    else
+        alert("Nenhum plano foi selecionado")
 }
+
+
+
+
 
