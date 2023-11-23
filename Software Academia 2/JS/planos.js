@@ -62,10 +62,18 @@ table.querySelectorAll("th,td").forEach(function (_el, index) {
 
     _radioSelected = document.querySelector('[name="plano"]:checked');
     if (_radioSelected) {
-        
+
 
 
 
     }
 
 })
+
+
+function Selecionar() {
+    var select = document.getElementById("select");
+    var value = select.options[select.selectedIndex].value;
+    alert(value);
+}
+
