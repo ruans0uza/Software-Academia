@@ -14,11 +14,14 @@
 
 <body>
 
+    <br>
     <h1>Financeiro</h1>
+    <br>
     <div id="main">
 
 
         <h4>Escolha o método de pagamento</h4>
+        <br>
         <div id="form-pix">
             <input type="radio" name="financeiro" id="pix" value="pix">
             <label for="pix">PIX</label>
@@ -32,13 +35,15 @@
             <label for="cartaodecredito">CARTÃO DE CRÉDITO</label>
         </div>
 
+        <br>
+
         <button id="selecionar" onclick="selecao()">Selecionar</button>
 
         <div id="div-pix">
             <label for="codigoPix">Copie o código do Pix abaixo: </label>
             <input type="text" name="codigo" id="codigoPix">
             <label for="qrCode">Escaneie o Qr Code abaixo: </label>
-            <img src="qrcode.png" alt="qrcode" srcset="" id="qrCode">
+            <img src="../IMAGENS/qrcode.jpg" alt="qrcode" srcset="" id="qrCode">
 
         </div>
         <div id="div-boleto">
@@ -47,6 +52,7 @@
             <button>GERAR BOLETO</button>
 
         </div>
+        <br>
         <h4 id="cartao-title">Digite seus dados de cartão de crédito</h4>
 
         <div id="div-cartaoDeCredito">
@@ -63,7 +69,6 @@
 
 
     </div>
-    <a href="../menu.html">Menu</a>
 
 
 </body>

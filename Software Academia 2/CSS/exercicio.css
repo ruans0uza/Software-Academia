@@ -1,18 +1,17 @@
 @import url("https:/fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
 
-* {
+* { 
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
     background-image: url(../IMAGENS/GerarTreino.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    
 }
 
-
-input[type="radio"]:checked+label {
-    background-color: #007BFF;
-    color: #fff;
-}
 
 button {
     display: block;
@@ -24,19 +23,26 @@ button {
     cursor: pointer;
     font-size: medium;
     border-radius: 20px;
+    margin: 10px auto 0;
 
 }
 
 button:hover {
     background-color: rgba(72, 47, 70);
     transition: 0.3s;
+    
 }
 
 #tabelaTreino{
     color: #fff;
     background-color: #fff;
     text-align: center;
+    margin: 10px auto 0;
+    border: #fff;
+    border: 5px solid rgba(255, 255, 255, .2);
+    
 }
+    
 
 h1, h2 {
     text-align: center;
@@ -50,9 +56,13 @@ h1, h2 {
     border-radius: 20px;
     width: 25%;
     color: #fff;
+    margin: 10px auto 0;
 
 }
 
 th, td {
     box-shadow: 20px;
+    padding: 10px;
+    font-weight: 500;
+    
 }

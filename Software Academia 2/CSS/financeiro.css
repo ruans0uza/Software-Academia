@@ -1,11 +1,29 @@
-#main {
+@import url("https:/fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-size: large;
+}
+
+body {
+    background-image: url('../IMAGENS/financeiro.jpg');
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+#main {
     max-width: 400px;
-    margin: 0 auto;
-    padding: 30px;
-    background-color: #fff;
-    border-radius: 5px;
+    margin: 2px auto;
+    padding: 50px;
+    backdrop-filter: blur(20px);
+    border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    
 }
 
 
@@ -15,10 +33,11 @@ input[type="radio"] {
 
 label {
     display: inline-block;
+    color: #fff;
     cursor: pointer;
     width: 90%;
     padding: 10px;
-    border: 2px solid black;
+    border: 2px solid #fff;
     margin: 5px;
     border-radius: 5px;
 }
@@ -26,20 +45,24 @@ label {
 input[type="radio"]:checked+label {
     background-color: #007BFF;
     color: #fff;
+    transition: 0.3s;
 }
 
 button {
     display: block;
-    background-color: rgb(111, 231, 111);
+    background-color: rgba(255, 255, 255);
     color: black;
     padding: 10px 20px;
     margin-top: 20px;
     border-radius: 5px;
     cursor: pointer;
+    margin: 10px auto 0;
 }
 
 button:hover {
-    background-color: rgb(111, 231, 111);;
+    background-color: rgba(72, 47, 70);
+    transition: 0.3s;
+
 }
 
 #div-pix,
@@ -60,5 +83,11 @@ input[type="text"] {
 #qrCode {
     width: 200px;
     height: 200px;
+}
+
+h1, h2, h3, h4 {
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
 }
 
