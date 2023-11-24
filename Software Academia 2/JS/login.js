@@ -5,6 +5,7 @@ function verificar_alunoLogado() {
 }
 verificar_alunoLogado();
 
+
 document.querySelector('.btn-action').addEventListener('click', function (e) {
     var _btn = this,
         emailVal = document.querySelector('[name="email"]').value,
