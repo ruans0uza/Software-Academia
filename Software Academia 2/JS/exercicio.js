@@ -106,7 +106,6 @@ var exerciciosTipo = {
 }
 
 function gerarTreino() {
-    const userID = document.getElementById("userID").value;
     const tabelaTreino = document.getElementById("tabelaTreino");
     tabelaTreino.innerHTML = "<tr><th>Dia</th><th>Exercício</th></tr>";
     //var tiposTreinoKeys = Object.keys(exercicios);

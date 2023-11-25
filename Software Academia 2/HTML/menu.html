@@ -16,8 +16,15 @@
         <div class="bnt-expandir">
             <i class="bi bi-list" id="bnt-exp"></i>
         </div>
+        <br>
 
         <ul>
+            <li class="item-menu">
+                <a>
+                    <span class="icon"><i class="bi bi-person-circle"></i></span>
+                    <span id="nomeUsuario" class="txt-link"></span>
+                </a>
+            </li>
             <li class="item-menu">
                 <a href="../HTML/login.html">
                     <span class="icon"><i class="bi bi-person-circle"></i></span>
@@ -36,11 +43,33 @@
                     <span class="txt-link">Planos</span>
                 </a>
             </li>
+            <li class="item-menu">
+                <a href="../HTML/financeiro.html">
+                    <span class="icon"><i class="bi bi-currency-dollar"></i></span>
+                    <span class="txt-link">Financeiro</span>
+                </a>
+            </li>
+            <li class="item-menu">
+                <a href="../HTML/logout.html">
+                    <span class="icon"><i class="bi bi-currency-dollar"></i></span>
+                    <span class="txt-link">Logout</span>
+                </a>
+            </li>
         </ul>
     </nav>
     </div>
     </form>
+    <script>
+        if (localStorage.idAlunoLogado.length != 0) {
+            let data = JSON.parse(localStorage.alunosArr)
+            for (let counter = 0;counter<data.length;counter++) {
+                if (data[counter].id==localStorage.idAlunoLogado){
+                    document.getElementById("nomeUsuario").innerText='Olá, ' +data[counter].nome;
+                }
+            }
+        }
 
+    </script>
 </body>
 
 </html>

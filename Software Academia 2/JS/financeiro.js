@@ -25,8 +25,7 @@ function selecao() {
         div_boleto.style.display = "none";
         div_cartaodecredito.style.display = "grid";
     }
-
-
 }
+
 
 

@@ -7,27 +7,74 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Visual Academy</title>
     <link rel="stylesheet" href="../CSS/planos.css" type="text/css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
 </head>
 
+<nav class="menu-lateral">
+
+    <div class="bnt-expandir">
+        <i class="bi bi-list" id="bnt-exp"></i>
+    </div>
+    <br>
+
+    <ul>
+        <li class="item-menu">
+            <a href="../HTML/menu.html">
+                <span class="icon"><i class="bi bi-house"></i></span>
+                <span class="txt-link">Menu</span>
+            </a>
+        </li>
+        <li class="item-menu">
+            <a href="../HTML/login.html">
+                <span class="icon"><i class="bi bi-person-circle"></i></span>
+                <span class="txt-link">Login</span>
+            </a>
+        </li>
+        <li class="item-menu">
+            <a href="../HTML/exercicio.html">
+                <span class="icon"><i class="bi bi-clipboard2-data"></i></span>
+                <span class="txt-link">Exercício</span>
+            </a>
+        </li>
+        <li class="item-menu">
+            <a href="../HTML/planos.html">
+                <span class="icon"><i class="bi bi-cart-check"></i></span>
+                <span class="txt-link">Planos</span>
+            </a>
+        </li>
+        <li class="item-menu">
+            <a href="../HTML/financeiro.html">
+                <span class="icon"><i class="bi bi-currency-dollar"></i></span>
+                <span class="txt-link">Financeiro</span>
+            </a>
+        </li>
+    </ul>
+</nav>
+</div>
+</form>
+
 <body>
+
+
     <div id="main">
         <h1 class="color-title">Desfrute dos Melhores Planos de Nossa Academia</h1>
-        
+
         <table id="plano1">
             <tr>
                 <th>
                 </th>
                 <th>
                     <div id="planosilver">
-                        
+
                         <h3 class="plan-color" style="color:#c0c0c0;">Plano Silver</h3>
                         <input type="radio" name="plano" id="silver" value="Silver">
-                    </th>
-                </div>
-                <div id="planogold">
-                    <th>
-                        <h3 class="plan-color" style="color:gold;">Plano Gold</h3>
-                        <input type="radio" name="plano" id="gold" value="Gold">
+                </th>
+    </div>
+    <div id="planogold">
+        <th>
+            <h3 class="plan-color" style="color:gold;">Plano Gold</h3>
+            <input type="radio" name="plano" id="gold" value="Gold">
         </th>
     </div>
 
@@ -37,192 +84,192 @@
             <input type="radio" name="plano" id="premium" value="Premium">
         </th>
     </div>
-</div>
-</tr>
-<tr>
+    </div>
+    </tr>
+    <tr>
         <td>• Acesso a todos os equipamentos da academia</td>
         <!-- SIM -->
         <td><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="#5ccb5f" class="bi bi-check2-circle"
-            viewBox="0 0 16 16">
-            <path
-            d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0z" />
-            <path
-            d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l7-7z" />
-        </svg></td>
-        <!-- SIM -->
-        <td><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="#5ccb5f" class="bi bi-check2-circle"
-            viewBox="0 0 16 16">
-            <path
-            d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0z" />
-            <path
-            d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l7-7z" />
-        </svg></td>
-        <!-- SIM -->
-        <td><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="#5ccb5f" class="bi bi-check2-circle"
-            viewBox="0 0 16 16">
-            <path
-            d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0z" />
-            <path
-            d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l7-7z" />
-            </svg></td>
-        </tr>
-        <tr>
-            <td>• Aulas de grupo ilimitadas</td>
-            <!-- SIM -->
-            <td><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="#5ccb5f" class="bi bi-check2-circle"
                 viewBox="0 0 16 16">
                 <path
-                d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0z" />
+                    d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0z" />
                 <path
-                d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l7-7z" />
+                    d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l7-7z" />
             </svg></td>
         <!-- SIM -->
         <td><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="#5ccb5f" class="bi bi-check2-circle"
-            viewBox="0 0 16 16">
-            <path
-            d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0z" />
-            <path
-            d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l7-7z" />
-        </svg></td>
+                viewBox="0 0 16 16">
+                <path
+                    d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0z" />
+                <path
+                    d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l7-7z" />
+            </svg></td>
         <!-- SIM -->
         <td><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="#5ccb5f" class="bi bi-check2-circle"
-            viewBox="0 0 16 16">
-            <path
-            d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0z" />
-            <path
-            d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l7-7z" />
-        </svg></td>
+                viewBox="0 0 16 16">
+                <path
+                    d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0z" />
+                <path
+                    d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l7-7z" />
+            </svg></td>
+    </tr>
+    <tr>
+        <td>• Aulas de grupo ilimitadas</td>
+        <!-- SIM -->
+        <td><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="#5ccb5f" class="bi bi-check2-circle"
+                viewBox="0 0 16 16">
+                <path
+                    d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0z" />
+                <path
+                    d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l7-7z" />
+            </svg></td>
+        <!-- SIM -->
+        <td><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="#5ccb5f" class="bi bi-check2-circle"
+                viewBox="0 0 16 16">
+                <path
+                    d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0z" />
+                <path
+                    d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l7-7z" />
+            </svg></td>
+        <!-- SIM -->
+        <td><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="#5ccb5f" class="bi bi-check2-circle"
+                viewBox="0 0 16 16">
+                <path
+                    d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0z" />
+                <path
+                    d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l7-7z" />
+            </svg></td>
     </tr>
     <tr>
         <td>• Personal trainer </td>
         <!-- SIM -->
         <td><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="#5ccb5f" class="bi bi-check2-circle"
-            viewBox="0 0 16 16">
-            <path
-            d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0z" />
-            <path
-            d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l7-7z" />
-        </svg></td>
+                viewBox="0 0 16 16">
+                <path
+                    d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0z" />
+                <path
+                    d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l7-7z" />
+            </svg></td>
         <!-- SIM -->
         <td><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="#5ccb5f" class="bi bi-check2-circle"
-            viewBox="0 0 16 16">
-            <path
-            d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0z" />
-                <path
-                d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l7-7z" />
-            </svg></td>
-            <!-- SIM -->
-            <td><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="#5ccb5f" class="bi bi-check2-circle"
-                viewBox="0 0 16 16">
-                <path
-                d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0z" />
-                <path
-                d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l7-7z" />
-            </svg></td>
-        </tr>
-        <tr>
-            <td>• Acesso 24 horas </td>
-            <!-- SIM -->
-            <td><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="#5ccb5f" class="bi bi-check2-circle"
-                viewBox="0 0 16 16">
-                <path
-                d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0z" />
-                <path
-                d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l7-7z" />
-            </svg></td>
-            <!-- SIM -->
-            <td><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="#5ccb5f" class="bi bi-check2-circle"
-                viewBox="0 0 16 16">
-                <path
-                d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0z" />
-                <path
-                d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l7-7z" />
-            </svg></td>
-            <!-- SIM -->
-            <td><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="#5ccb5f" class="bi bi-check2-circle"
                 viewBox="0 0 16 16">
                 <path
                     d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0z" />
                 <path
                     d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l7-7z" />
-                </svg></td>
-            </tr>
-            <tr>
-                <td>• Descontos em produtos da academia </td>
-                <!-- NÃO -->
-                <td><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#FF0000" class="bi bi-x-circle"
-                    viewBox="0 0 16 16">
-                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
-                    <path
-                    d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
-                </svg></td>
-                <!-- SIM -->
-                <td><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="#5ccb5f" class="bi bi-check2-circle"
-                    viewBox="0 0 16 16">
-                    <path
-                    d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0z" />
-                    <path
-                    d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l7-7z" />
-                </svg></td>
-                <!-- SIM -->
-                <td><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="#5ccb5f" class="bi bi-check2-circle"
-                    viewBox="0 0 16 16">
-                    <path
-                    d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0z" />
-                    <path
-                    d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l7-7z" />
-                </svg></td>
-            </tr>
-            <tr>
-                <td>• Acesso a academias parceiras </td>
-                <!-- NÃO -->
-                <td><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#FF0000" class="bi bi-x-circle"
-                    viewBox="0 0 16 16">
-                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
-                    <path
-                    d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
-                </svg></td>
-                <!-- NÃO -->
-                <td><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="#5ccb5f" class="bi bi-check2-circle"
-                    viewBox="0 0 16 16">
-                    <path
-                    d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0z" />
-                    <path
-                    d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l7-7z" />
-                </svg></td>
-                <!-- SIM -->
-                <td><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="#5ccb5f" class="bi bi-check2-circle"
-                    viewBox="0 0 16 16">
-                    <path
-                    d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0z" />
-                    <path
-                    d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l7-7z" />
-                </svg></td>
-            </tr>
-            <tr>
-                <td>• Acompanhamento nutricional </td>
-                <!-- NÃO -->
-                <td><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#FF0000" class="bi bi-x-circle"
-                    viewBox="0 0 16 16">
-                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
-                    <path
-                    d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
-                </svg></td>
-                <!-- NÃO -->
-                <td><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#FF0000" class="bi bi-x-circle"
-                    viewBox="0 0 16 16">
-                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
-                    <path
-                    d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
-                </svg></td>
+            </svg></td>
         <!-- SIM -->
         <td><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="#5ccb5f" class="bi bi-check2-circle"
-            viewBox="0 0 16 16">
-            <path
-            d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0z" />
-            <path
-            d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l7-7z" />
-        </svg></td>
+                viewBox="0 0 16 16">
+                <path
+                    d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0z" />
+                <path
+                    d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l7-7z" />
+            </svg></td>
+    </tr>
+    <tr>
+        <td>• Acesso 24 horas </td>
+        <!-- SIM -->
+        <td><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="#5ccb5f" class="bi bi-check2-circle"
+                viewBox="0 0 16 16">
+                <path
+                    d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0z" />
+                <path
+                    d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l7-7z" />
+            </svg></td>
+        <!-- SIM -->
+        <td><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="#5ccb5f" class="bi bi-check2-circle"
+                viewBox="0 0 16 16">
+                <path
+                    d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0z" />
+                <path
+                    d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l7-7z" />
+            </svg></td>
+        <!-- SIM -->
+        <td><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="#5ccb5f" class="bi bi-check2-circle"
+                viewBox="0 0 16 16">
+                <path
+                    d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0z" />
+                <path
+                    d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l7-7z" />
+            </svg></td>
+    </tr>
+    <tr>
+        <td>• Descontos em produtos da academia </td>
+        <!-- NÃO -->
+        <td><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#FF0000" class="bi bi-x-circle"
+                viewBox="0 0 16 16">
+                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                <path
+                    d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
+            </svg></td>
+        <!-- SIM -->
+        <td><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="#5ccb5f" class="bi bi-check2-circle"
+                viewBox="0 0 16 16">
+                <path
+                    d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0z" />
+                <path
+                    d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l7-7z" />
+            </svg></td>
+        <!-- SIM -->
+        <td><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="#5ccb5f" class="bi bi-check2-circle"
+                viewBox="0 0 16 16">
+                <path
+                    d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0z" />
+                <path
+                    d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l7-7z" />
+            </svg></td>
+    </tr>
+    <tr>
+        <td>• Acesso a academias parceiras </td>
+        <!-- NÃO -->
+        <td><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#FF0000" class="bi bi-x-circle"
+                viewBox="0 0 16 16">
+                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                <path
+                    d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
+            </svg></td>
+        <!-- NÃO -->
+        <td><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="#5ccb5f" class="bi bi-check2-circle"
+                viewBox="0 0 16 16">
+                <path
+                    d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0z" />
+                <path
+                    d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l7-7z" />
+            </svg></td>
+        <!-- SIM -->
+        <td><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="#5ccb5f" class="bi bi-check2-circle"
+                viewBox="0 0 16 16">
+                <path
+                    d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0z" />
+                <path
+                    d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l7-7z" />
+            </svg></td>
+    </tr>
+    <tr>
+        <td>• Acompanhamento nutricional </td>
+        <!-- NÃO -->
+        <td><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#FF0000" class="bi bi-x-circle"
+                viewBox="0 0 16 16">
+                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                <path
+                    d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
+            </svg></td>
+        <!-- NÃO -->
+        <td><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#FF0000" class="bi bi-x-circle"
+                viewBox="0 0 16 16">
+                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                <path
+                    d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
+            </svg></td>
+        <!-- SIM -->
+        <td><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="#5ccb5f" class="bi bi-check2-circle"
+                viewBox="0 0 16 16">
+                <path
+                    d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0z" />
+                <path
+                    d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l7-7z" />
+            </svg></td>
     </tr>
     <tr>
         <td>• Sauna</td>
@@ -231,55 +278,55 @@
                 viewBox="0 0 16 16">
                 <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
                 <path
-                d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
+                    d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
             </svg></td>
-            <!-- NÃO -->
-            <td><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#FF0000" class="bi bi-x-circle"
+        <!-- NÃO -->
+        <td><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#FF0000" class="bi bi-x-circle"
                 viewBox="0 0 16 16">
                 <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
                 <path
-                d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
-            </svg></td>
-            <!-- SIM -->
-            <td><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="#5ccb5f" class="bi bi-check2-circle"
-                viewBox="0 0 16 16">
-                <path
-                d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0z" />
-                <path
-                d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l7-7z" />
-            </svg></td>
-        </tr>
-        <tr>
-            <td>• Cadeira de Massagem </td>
-            <!-- NÃO -->
-            <td><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#FF0000" class="bi bi-x-circle"
-                viewBox="0 0 16 16">
-                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
-                <path
-                d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
-            </svg></td>
-            <!-- NÃO -->
-            <td><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#FF0000" class="bi bi-x-circle"
-                viewBox="0 0 16 16">
-                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
-                <path
-                d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
+                    d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
             </svg></td>
         <!-- SIM -->
         <td><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="#5ccb5f" class="bi bi-check2-circle"
-            viewBox="0 0 16 16">
-            <path
+                viewBox="0 0 16 16">
+                <path
                     d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0z" />
-                    <path
+                <path
                     d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l7-7z" />
-                </svg></td>
-            </tr>
-        </div>
+            </svg></td>
+    </tr>
+    <tr>
+        <td>• Cadeira de Massagem </td>
+        <!-- NÃO -->
+        <td><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#FF0000" class="bi bi-x-circle"
+                viewBox="0 0 16 16">
+                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                <path
+                    d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
+            </svg></td>
+        <!-- NÃO -->
+        <td><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#FF0000" class="bi bi-x-circle"
+                viewBox="0 0 16 16">
+                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                <path
+                    d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
+            </svg></td>
+        <!-- SIM -->
+        <td><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="#5ccb5f" class="bi bi-check2-circle"
+                viewBox="0 0 16 16">
+                <path
+                    d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0z" />
+                <path
+                    d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l7-7z" />
+            </svg></td>
+    </tr>
+    </div>
     </form>
-    
-    
-    
-    
+
+
+
+
     <!-- <tr>
         <td>
             • Acesso a todos os equipamentos da academia; <br>
@@ -310,21 +357,21 @@
                     
                 </td>
             </tr> -->
-            <tr>
+    <tr>
         <td></td>
         <td>R$ 80,00 / Mês</td>
         <td>R$ 120,00 / Mês</td>
         <td>R$ 180,00 / Mês</td>
     </tr>
-</table>
+    </table>
 
 
-<button id="btn-select" onclick="verificaSelecionado()">Selecionar</button>
+    <button id="btn-select" onclick="verificaSelecionado()">Selecionar</button>
 
 
 
 
-<script src="../JS/planos.js"></script>
+    <script src="../JS/planos.js"></script>
 </body>
 
 </html>

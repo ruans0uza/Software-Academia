@@ -64,8 +64,6 @@ table.querySelectorAll("th,td").forEach(function (_el, index) {
     if (_radioSelected) {
 
 
-
-
     }
 
 })
