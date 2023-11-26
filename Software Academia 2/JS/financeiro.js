@@ -26,6 +26,3 @@ function selecao() {
         div_cartaodecredito.style.display = "grid";
     }
 }
-
-
-

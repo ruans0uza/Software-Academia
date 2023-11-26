@@ -1,15 +1,17 @@
 @import url("https:/fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
 
-* { 
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
+}
+body{
     background-image: url(../IMAGENS/GerarTreino.jpg);
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
-    
+
 }
 
 nav.menu-lateral {
@@ -79,7 +81,7 @@ ul li.item-menu a .icon>i {
 
 button {
     display: block;
-    background-color: rgb(255, 255, 255);
+    background-color: rgba(72, 47, 70);
     color: #fff;
     padding: 10px 20px;
     margin-top: 20px;
@@ -94,22 +96,25 @@ button {
 button:hover {
     background-color: rgba(72, 47, 70);
     transition: 0.3s;
-    
+
 }
 
-#tabelaTreino{
+#tabelaTreino {
     color: #fff;
-    background-color: #fff;
+   
     text-align: center;
     margin: 10px auto 0;
     border: #fff;
     border: 3px solid rgb(85, 60, 83);
     padding: 5px;
-    
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
-    
 
-h1, h2 {
+
+h1,
+h2 {
     text-align: center;
     color: #fff;
 
@@ -125,8 +130,9 @@ h1, h2 {
 
 }
 
-th, td {
-      
+th,
+td {
+
     border: 3px solid rgb(85, 60, 83);
     padding: 5px;
     text-align: center;
@@ -134,4 +140,3 @@ th, td {
     font-weight: 600;
 
 }
-

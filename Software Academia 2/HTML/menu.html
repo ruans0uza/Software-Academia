@@ -21,7 +21,7 @@
         <ul>
             <li class="item-menu">
                 <a>
-                    <span class="icon"><i class="bi bi-person-circle"></i></span>
+                    <span class="icon"><i class="bi bi-person-check-fill"></i></span>
                     <span id="nomeUsuario" class="txt-link"></span>
                 </a>
             </li>
@@ -51,7 +51,7 @@
             </li>
             <li class="item-menu">
                 <a href="../HTML/logout.html">
-                    <span class="icon"><i class="bi bi-currency-dollar"></i></span>
+                    <span class="icon"><i class="bi bi-box-arrow-in-left"></i></span>
                     <span class="txt-link">Logout</span>
                 </a>
             </li>
@@ -62,9 +62,9 @@
     <script>
         if (localStorage.idAlunoLogado.length != 0) {
             let data = JSON.parse(localStorage.alunosArr)
-            for (let counter = 0;counter<data.length;counter++) {
-                if (data[counter].id==localStorage.idAlunoLogado){
-                    document.getElementById("nomeUsuario").innerText='Olá, ' +data[counter].nome;
+            for (let counter = 0; counter < data.length; counter++) {
+                if (data[counter].id == localStorage.idAlunoLogado) {
+                    document.getElementById("nomeUsuario").innerText = 'Olá, ' + data[counter].nome;
                 }
             }
         }

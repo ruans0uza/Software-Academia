@@ -5,8 +5,9 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
-    font-size: large;
+    
 }
+
 nav.menu-lateral {
     width: 65px;
     height: 100%;
@@ -76,18 +77,22 @@ body {
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
+
+    
 }
 
 #main {
     max-width: 400px;
     margin: 2px auto;
     padding: 50px;
-    backdrop-filter: blur(20px);
+    backdrop-filter: blur(5px);
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
+
     
 }
+
 
 
 input[type="radio"] {
@@ -148,9 +153,14 @@ input[type="text"] {
     height: 200px;
 }
 
-h1, h2, h3, h4 {
+h2, h3, h4 {
     text-align: center;
     color: #fff;
-    font-size: 20px;
+    
+}
+h1{
+    text-align: center;
+    color: #fff;
+    container: auto;
 }
 
