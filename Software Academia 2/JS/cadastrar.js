@@ -35,17 +35,12 @@ document.querySelector('.btn-action').addEventListener('click', function (e) {
 });
 
 
-
 function verificarEmail(email) {
-
-
-    if (localStorage.alunosArr.includes(email)) {
-
-        return false
+    for (var i = 0; i < alunosArr.length; i++) {
+        if (alunosArr[i].email === email) {
+            return false;
+        }
     }
-
-    return true
-
+    return true;
 }
-
 
