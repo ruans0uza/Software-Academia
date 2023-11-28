@@ -13,7 +13,9 @@ body {
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
+
 }
+
 
 nav.menu-lateral {
     width: 65px;
@@ -22,6 +24,8 @@ nav.menu-lateral {
     padding: 40px 0 40px 0%;
     box-shadow: 5px 0 0 purple;
     position: fixed;
+    left: 0;
+    top: 0;
     overflow: hidden;
     transition: .5s;
 }

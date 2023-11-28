@@ -15,58 +15,58 @@
 <body>
 
     <br>
-    <h1>Financeiro
+    <h1>Financeiro</h1>
 
-        <nav class="menu-lateral">
+    <nav class="menu-lateral">
 
-            
-            <div class="bnt-expandir">
-                <i class="bi bi-list" id="bnt-exp"></i>
-            </div>
-            <br>
 
-            <ul>
-                <li class="item-menu">
-                    <a>
-                        <span class="icon"><i class="bi bi-person-check-fill"></i></span>
-                        <span id="nomeUsuario" class="txt-link"></span>
-                    </a>
-                </li>
-                <li class="item-menu">
-                    <a href="../HTML/menu.html">
-                        <span class="icon"><i class="bi bi-house"></i></span>
-                        <span class="txt-link">Menu</span>
-                    </a>
-                </li>
-                <li class="item-menu">
-                    <a href="../HTML/exercicio.html">
-                        <span class="icon"><i class="bi bi-clipboard2-data"></i></span>
-                        <span class="txt-link">Exercício</span>
-                    </a>
-                </li>
-                <li class="item-menu">
-                    <a href="../HTML/planos.html">
-                        <span class="icon"><i class="bi bi-cart-check"></i></span>
-                        <span class="txt-link">Planos</span>
-                    </a>
-                </li>
-                <li class="item-menu">
-                    <a href="../HTML/financeiro.html">
-                        <span class="icon"><i class="bi bi-currency-dollar"></i></span>
-                        <span class="txt-link">Financeiro</span>
-                    </a>
-                </li>
-                <li class="item-menu">
-                    <a href="../HTML/logout.html">
-                        <span class="icon"><i class="bi bi-box-arrow-in-left"></i></span>
-                        <span class="txt-link">Logout</span>
-                    </a>
-                </li>
-            </ul>
-        </nav>
+        <div class="bnt-expandir">
+            <i class="bi bi-list" id="bnt-exp"></i>
         </div>
-        </form>
-    </h1>
+        <br>
+
+        <ul>
+            <li class="item-menu">
+                <a>
+                    <span class="icon"><i class="bi bi-person-check-fill"></i></span>
+                    <span id="nomeUsuario" class="txt-link"></span>
+                </a>
+            </li>
+            <li class="item-menu">
+                <a href="../HTML/menu.html">
+                    <span class="icon"><i class="bi bi-house"></i></span>
+                    <span class="txt-link">Menu</span>
+                </a>
+            </li>
+            <li class="item-menu">
+                <a href="../HTML/exercicio.html">
+                    <span class="icon"><i class="bi bi-clipboard2-data"></i></span>
+                    <span class="txt-link">Exercício</span>
+                </a>
+            </li>
+            <li class="item-menu">
+                <a href="../HTML/planos.html">
+                    <span class="icon"><i class="bi bi-cart-check"></i></span>
+                    <span class="txt-link">Planos</span>
+                </a>
+            </li>
+            <li class="item-menu">
+                <a href="../HTML/financeiro.html">
+                    <span class="icon"><i class="bi bi-currency-dollar"></i></span>
+                    <span class="txt-link">Financeiro</span>
+                </a>
+            </li>
+            <li class="item-menu">
+                <a href="../HTML/logout.html">
+                    <span class="icon"><i class="bi bi-box-arrow-in-left"></i></span>
+                    <span class="txt-link">Logout</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    </div>
+    </form>
+
     <br>
 
     <div id="main">
@@ -86,12 +86,12 @@
             <input type="radio" name="financeiro" id="cartaodecredito" value="cartaodecredito">
             <label for="cartaodecredito">CARTÃO DE CRÉDITO</label>
         </div>
-    
-        <br>
-    
+
         <br>
 
-       
+        <br>
+
+
 
         <div id="div-pix">
             <label for="codigoPix">Copie o código do Pix abaixo: </label>
@@ -120,10 +120,20 @@
 
 
         </div>
-
-
-
     </div>
+
+    <script>
+        var url = new URL(window.location.href);
+        var planoNome = url.searchParams.get('plano');
+        console.dir(planoNome)
+
+        if(planoNome){
+            if(planoNome == 'Gold'){
+                
+            }
+        }
+
+    </script>
 
 
 </body>

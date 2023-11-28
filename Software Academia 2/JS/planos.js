@@ -70,9 +70,10 @@ table.querySelectorAll("th,td").forEach(function (_el, index) {
 
 
 function verificaSelecionado() {
+    var _plano = document.querySelector('[name="plano"]:checked');
 
-    if (document.getElementById('silver').checked || document.getElementById('gold').checked || document.getElementById('premium').checked) {
-        window.location.href = "../HTML/financeiro.html";
+    if (_plano) {
+        window.location.href = "../HTML/financeiro.html?plano=" + _plano.value;
     }
     else
         alert("Nenhum plano foi selecionado")
