@@ -94,8 +94,11 @@
 
 
         <div id="div-pix">
-            <label for="codigoPix">Copie o código do Pix abaixo: </label>
-            <input type="text" name="codigo" id="codigoPix">
+            <label for="codigoPix">Copie a chave Pix abaixo: </label>
+            <br>
+            <br>
+            <p>visualacademy@gmail.com</p>
+            <br>
             <label for="qrCode">Escaneie o Qr Code abaixo: </label>
             <img src="../IMAGENS/qrcode.jpg" alt="qrcode" srcset="" id="qrCode">
 
@@ -130,6 +133,17 @@
         if(planoNome){
             if(planoNome == 'Gold'){
                 
+            }
+        }
+
+    
+    
+        if (localStorage.idAlunoLogado.length != 0) {
+            let data = JSON.parse(localStorage.alunosArr)
+            for (let counter = 0; counter < data.length; counter++) {
+                if (data[counter].id == localStorage.idAlunoLogado) {
+                    document.getElementById("nomeUsuario").innerText = 'Olá, ' + data[counter].nome;
+                }
             }
         }
 

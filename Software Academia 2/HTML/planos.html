@@ -378,6 +378,18 @@
 
 
     <script src="../JS/planos.js"></script>
+
+    <script>
+        if (localStorage.idAlunoLogado.length != 0) {
+            let data = JSON.parse(localStorage.alunosArr)
+            for (let counter = 0; counter < data.length; counter++) {
+                if (data[counter].id == localStorage.idAlunoLogado) {
+                    document.getElementById("nomeUsuario").innerText = 'Olá, ' + data[counter].nome;
+                }
+            }
+        }
+
+    </script>
 </body>
 
 </html>
