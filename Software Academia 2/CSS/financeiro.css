@@ -161,6 +161,39 @@ h2, h3, h4 {
 h1{
     text-align: center;
     color: #fff;
-    container: auto;
+  
 }
 
+#div-cartaoDeCredito {
+    background-color: #f4f4f4;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#cartao-title {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+#div-cartaoDeCredito input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#div-cartaoDeCredito button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#div-cartaoDeCredito button:hover {
+    background-color: #0056b3;
+}

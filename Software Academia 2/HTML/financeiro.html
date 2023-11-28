@@ -74,22 +74,24 @@
 
         <h4>Escolha o método de pagamento</h4>
         <br>
-        <div id="form-pix">
+        <div id="form-pix" class="pmt-option">
             <input type="radio" name="financeiro" id="pix" value="pix">
             <label for="pix">PIX</label>
         </div>
-        <div id="form-boleto">
+        <div id="form-boleto" class="pmt-option">
             <input type="radio" name="financeiro" id="boleto" value="boleto">
             <label for="boleto">BOLETO</label>
         </div>
-        <div id="form-cartaodecredito">
+        <div id="form-cartaodecredito" class="pmt-option">
             <input type="radio" name="financeiro" id="cartaodecredito" value="cartaodecredito">
             <label for="cartaodecredito">CARTÃO DE CRÉDITO</label>
         </div>
-
+    
+        <br>
+    
         <br>
 
-        <button id="selecionar" onclick="selecao()">Selecionar</button>
+       
 
         <div id="div-pix">
             <label for="codigoPix">Copie o código do Pix abaixo: </label>

@@ -26,7 +26,7 @@ document.querySelector('.btn-action').addEventListener('click', function (e) {
 
         alunosArr.push(_aluno);
         localStorage.alunosArr = JSON.stringify(alunosArr);
-        window.location.href="../HTML/login.html"
+        window.location.href="../HTML/login.html";
     }
     else {
         alert("Esse e-mail já está cadastrado")
