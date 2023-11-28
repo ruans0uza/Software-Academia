@@ -17,16 +17,13 @@ document.querySelector('.btn-action').addEventListener('click', function (e) {
         senhaVal = document.querySelector('[name="senha"]').value,
         nascimentoVal = document.querySelector('[name="dataNascimento"]').value,
         _aluno;
-        console.log(emailVal)
-       
+    console.log(emailVal)
+
     if (verificarEmail(emailVal)) {
-
-
         _aluno = new aluno((alunosArr.length + 1), nomeVal, emailVal, senhaVal, nascimentoVal);
-
         alunosArr.push(_aluno);
         localStorage.alunosArr = JSON.stringify(alunosArr);
-        window.location.href="../HTML/login.html";
+        window.location.href = '../HTML/login.html';
     }
     else {
         alert("Esse e-mail já está cadastrado")
