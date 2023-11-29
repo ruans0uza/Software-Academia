@@ -18,8 +18,6 @@
     <h1>Financeiro</h1>
 
     <nav class="menu-lateral">
-
-
         <div class="bnt-expandir">
             <i class="bi bi-list" id="bnt-exp"></i>
         </div>
@@ -64,8 +62,6 @@
             </li>
         </ul>
     </nav>
-    </div>
-    </form>
 
     <br>
 
@@ -132,14 +128,14 @@
         var planoNome = url.searchParams.get('plano');
         console.dir(planoNome)
 
-        if(planoNome){
-            if(planoNome == 'Gold'){
-                
+        if (planoNome) {
+            if (planoNome == 'Gold') {
+
             }
         }
 
-    
-    
+
+
         if (localStorage.idAlunoLogado.length != 0) {
             let data = JSON.parse(localStorage.alunosArr)
             for (let counter = 0; counter < data.length; counter++) {

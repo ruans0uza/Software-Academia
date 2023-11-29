@@ -49,6 +49,7 @@ ul {
 }
 
 ul li.item-menu {
+    white-space: nowrap;
     transition: 0.5s;
 }
 

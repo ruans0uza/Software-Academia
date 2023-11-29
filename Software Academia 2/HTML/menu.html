@@ -57,8 +57,26 @@
             </li>
         </ul>
     </nav>
+
+
+    <div class="imagem-banner"
+        style="background-image: url(../IMAGENS/bannermenu.jpg);">
     </div>
-    </form>
+
+    <style>
+        .imagem-banner {
+            width: 1000px;
+            height: 500px;
+            margin-left: -500px;
+            margin-top: -250px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+
     <script>
         if (localStorage.idAlunoLogado.length != 0) {
             let data = JSON.parse(localStorage.alunosArr)
