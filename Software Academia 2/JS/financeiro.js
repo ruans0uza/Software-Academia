@@ -5,7 +5,9 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     var selecionarBtn = document.getElementById('selecionar');
-    selecionarBtn.addEventListener('click', selecao);
+    if (selecionarBtn) {
+        selecionarBtn.addEventListener('click', selecao);
+    }
 });
 
 function selecao() {
@@ -26,9 +28,44 @@ function selecao() {
         div_boleto.style.display = "inline";
         div_cartaodecredito.style.display = "none";
     } else if (cartaodecredito.checked) {
+        /*
         document.getElementById("cartao-title").style.display = "block";
         div_pix.style.display = "none";
         div_boleto.style.display = "none";
         div_cartaodecredito.style.display = "grid";
+        */
     }
-}   
+}
+
+
+var url = new URL(window.location.href);
+var planoNome = url.searchParams.get('plano');
+console.dir(planoNome)
+
+if (planoNome) {
+    if (planoNome == 'Gold') {
+
+    }
+}
+
+
+function openCardModal() {
+    document.querySelector('.card-modal').classList.add('card-opened');
+    /*
+    var radioButton = document.getElementById("cartaodecredito");
+
+    if (radioButton.checked) {
+        window.location.href = "card.html";
+    }
+    */
+}
+
+document.querySelectorAll('.card-modal .close-modal').forEach(function (_btn) {
+    _btn.addEventListener('click', function (e) {
+        document.querySelector('.card-modal').classList.remove('card-opened');
+    });
+})
+
+document.querySelector('.send-card-information').addEventListener('click', function (e) {
+    alert('Aguardando pagamento')
+});
