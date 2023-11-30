@@ -102,11 +102,11 @@ button:hover {
 
 #tabelaTreino {
     color: #fff;
-   
+    border-radius: 20px;
     text-align: center;
     margin: 10px auto 0;
     border: #fff;
-    border: 3px solid rgb(85, 60, 83);
+    border: 10px solid rgb(85, 60, 83);
     padding: 5px;
     backdrop-filter: blur(20px);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -134,10 +134,11 @@ h2 {
 th,
 td {
 
-    border: 3px solid rgb(85, 60, 83);
+    border: 2px solid rgb(85, 60, 83);
     padding: 5px;
     text-align: center;
     padding-top: 15px;
     font-weight: 600;
-
+    border-radius: 10px;
+    font-size: large;
 }

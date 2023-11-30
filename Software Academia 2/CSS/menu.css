@@ -16,6 +16,21 @@ body {
 
 }
 
+.imagem-banner {
+    width: 1000px;
+    height: 500px;
+    margin-left: -500px;
+    margin-top: -250px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
 
 nav.menu-lateral {
     width: 65px;

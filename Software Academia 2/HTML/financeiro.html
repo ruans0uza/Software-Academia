@@ -50,14 +50,14 @@
             </li>
             <li class="item-menu">
                 <a href="../HTML/financeiro.html">
-                    <span class="icon"><i class="bi bi-currency-dollar"></i></span>
+                    <span class="icon"><i class="bi bi-cash-coin"></i></span>
                     <span class="txt-link">Financeiro</span>
                 </a>
             </li>
             <li class="item-menu">
                 <a href="../HTML/logout.html">
                     <span class="icon"><i class="bi bi-box-arrow-in-left"></i></span>
-                    <span class="txt-link">Logout</span>
+                    <span class="txt-link">Sair</span>
                 </a>
             </li>
         </ul>
@@ -90,15 +90,16 @@
 
 
         <div id="div-pix">
-            <label for="codigoPix">Copie a chave Pix abaixo: </label>
+            <label for="codigoPix">Copie a chave Pix abaixo</label>
             <br>
             <br>
             <p>visual.academy@gmail.com</p>
             <br>
-            <label for="qrCode">Escaneie o Qr Code abaixo: </label>
+            <label for="qrCode">Escaneie o Qr Code abaixo</label>
             <br>
             <br>
             <img src="../IMAGENS/qrcode.jpg" alt="qrcode" srcset="" id="qrCode">
+            <button>FINALIZAR COMPRA</button>
 
         </div>
         <div id="div-boleto">
@@ -117,7 +118,7 @@
             <input type="text" name="" id="" placeholder="Digite o numero do cartão">
             <input type="text" name="" id="" placeholder="Digite o CVC">
             <input type="text" name="" id="" placeholder="Digite a data de vencimento do cartão">
-            <button>CONTINUAR</button>
+            <button>FINALIZAR COMPRA</button>
 
 
         </div>
@@ -140,7 +141,7 @@
             let data = JSON.parse(localStorage.alunosArr)
             for (let counter = 0; counter < data.length; counter++) {
                 if (data[counter].id == localStorage.idAlunoLogado) {
-                    document.getElementById("nomeUsuario").innerText = 'Olá, ' + data[counter].nome;
+                    document.getElementById("nomeUsuario").innerText = '' + data[counter].nome;
                 }
             }
         }

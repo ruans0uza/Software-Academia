@@ -148,7 +148,6 @@ input[type="radio"]:checked+label {
     padding: 5px;
     display: flex;
     flex-direction: column;
-
 }
 
 #main .color-title {
@@ -169,4 +168,5 @@ input[type="radio"]:checked+label {
 td.colhover,
 th.colhover {
     background-color: rgba(255, 255, 255, .2)
+    
 }
