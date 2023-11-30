@@ -22,7 +22,7 @@ nav.menu-lateral {
 }
 
 nav.menu-lateral:hover {
-    width: 250px;
+    width: 300px;
 }
 
 .bnt-expandir {
@@ -90,10 +90,10 @@ body {
     padding: 50px;
     backdrop-filter: blur(5px);
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.9);
     text-align: center;
     
-    
+   
 }
 
 
