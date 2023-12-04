@@ -69,3 +69,39 @@ document.querySelectorAll('.card-modal .close-modal').forEach(function (_btn) {
 document.querySelector('.send-card-information').addEventListener('click', function (e) {
     alert('Aguardando pagamento')
 });
+
+  document.getElementById('finalizarCompraBtn').onclick = function() {
+    alert('Aguardando confirmação');
+};
+
+document.getElementById('boletoBtn').onclick = function() {
+    alert('Aguardando pagamento');
+};
+
+document.getElementById('gerar-boleto').addEventListener('click', function () {
+    var nome = document.getElementById('nome').value;
+    var cpf = document.getElementById('cpf').value;
+
+    if (nome.trim() === '' || cpf.trim() === '') {
+        alert('Preencha todos os campos antes de gerar o boleto.');
+        return;
+    }
+
+    var doc = new jsPDF();
+
+    doc.text(20, 20, 'Nome: ' + nome);
+    doc.text(20, 30, 'CPF: ' + cpf);
+
+    doc.save('boleto.pdf');
+
+    var link = document.createElement('a');
+    link.href = doc.output('bloburl'); // Cria um blob URL do PDF
+    link.download = 'boleto.pdf';
+
+    // Adicione o link ao corpo do documento e clique nele
+    document.body.appendChild(link);
+    link.click();
+
+    // Remova o link do corpo do documento
+    document.body.removeChild(link);
+});
