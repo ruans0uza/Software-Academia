@@ -93,7 +93,7 @@ document.getElementById('boletoBtn').addEventListener('click', function () {
     doc.text(20, 30, 'CPF: ' + cpf);
 
     if (localStorage.planoEscolhido.valor) {
-        localStorage.planoEscolhido.planoNome;
+        (localStorage.planoEscolhido.planoNome);
     }
     doc.text(20, 40, 'Plano: ' + planoNome);
 
