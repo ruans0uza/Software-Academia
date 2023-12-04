@@ -70,15 +70,15 @@ document.querySelector('.send-card-information').addEventListener('click', funct
     alert('Aguardando confirmação')
 });
 
-  document.getElementById('finalizarCompraBtn').onclick = function() {
+document.getElementById('finalizarCompraBtn').onclick = function () {
     alert('Aguardando confirmação');
 };
 
-document.getElementById('boletoBtn').onclick = function() {
+document.getElementById('boletoBtn').onclick = function () {
     alert('Aguardando pagamento');
 };
 
-document.getElementById('gerar-boleto').addEventListener('click', function () {
+document.getElementById('boletoBtn').addEventListener('click', function () {
     var nome = document.getElementById('nome').value;
     var cpf = document.getElementById('cpf').value;
 
@@ -91,6 +91,21 @@ document.getElementById('gerar-boleto').addEventListener('click', function () {
 
     doc.text(20, 20, 'Nome: ' + nome);
     doc.text(20, 30, 'CPF: ' + cpf);
+
+    if (localStorage.planoEscolhido.valor) {
+        localStorage.planoEscolhido.planoNome;
+    }
+    doc.text(20, 40, 'Plano: ' + planoNome);
+
+    var url = new URL(window.location.href);
+    var planoNome = url.searchParams.get('plano');
+    console.dir(planoNome)
+
+    if (planoNome) {
+        if (planoNome == 'Gold') {
+
+        }
+    }
 
     doc.save('boleto.pdf');
 
@@ -105,3 +120,7 @@ document.getElementById('gerar-boleto').addEventListener('click', function () {
     // Remova o link do corpo do documento
     document.body.removeChild(link);
 });
+
+
+
+
