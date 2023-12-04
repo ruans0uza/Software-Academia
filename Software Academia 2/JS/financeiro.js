@@ -67,7 +67,7 @@ document.querySelectorAll('.card-modal .close-modal').forEach(function (_btn) {
 })
 
 document.querySelector('.send-card-information').addEventListener('click', function (e) {
-    alert('Aguardando pagamento')
+    alert('Aguardando confirmação')
 });
 
   document.getElementById('finalizarCompraBtn').onclick = function() {
